@@ -1,0 +1,111 @@
+<DOCTYPE! html>
+<html>
+<head>
+  <title>AlphaBlog About page</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0px;
+    }
+    header {
+      background-color: black;
+      color: antiquewhite;
+      padding: 20px;
+      border: solid darkblue 2px;
+      text-align: center;
+    }
+    footer {
+      background-color: black;
+      color: antiquewhite;
+      padding: 20px;
+      border: solid darkblue 2px;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    nav {
+      background-color: white;
+      color: darkblue;
+      align-content: center;
+      float: left;
+      padding: 1em;
+      max-width: 160px;
+    }
+
+    article {
+      background: darkblue;
+      color: white;
+      margin: 0 0 0 170px;
+      border: solid black 2px;
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul a {
+      display: block;
+      text-decoration: none;
+      background-color: white;
+    }
+
+    nav ul a:hover {
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Page</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><%= link_to 'Home', root_path%></li>
+    </ul>
+  </nav>
+  <article>
+    <pre>	Gemovi su kao eksterne klase koje nisu dio jre-a niti dio java.lang paketa
+      u javi npr commons itd
+
+      Stranica za gemove: rubygems.org/gems
+      Stranica za rails: rubyonrails.org
+      guides.rubyonrails.org
+
+      Stvaranje aplikacije kroz cmd upisivanjem
+      rails new appName
+
+      bundler je gem koji ide na stranicu rubygems.org
+      i vadi van defaultne gemove koji dolaze sa pozivom gornje
+      naredbe
+
+      Rails koristi oblikovni obrazac MVC (model,view controller)
+      dakle rails na zahtjev korisnika koristi router koji pristupa
+      određenom controlleru, ovisno o stranici koju smo zatražili
+      nakon toga kontroler ili pristupa bazi podataka i back-endu
+      (ovdje se koristi pojam model(slično Swingu))
+      ili rendera stranicu putem Viewa(isto tako slično Swingu)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      Albert Einstain
+    </pre>
+  </article>
+  <footer>By Davor Češljaš</footer>
+</body>
+</html>
