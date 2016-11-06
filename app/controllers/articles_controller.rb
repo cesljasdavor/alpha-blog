@@ -23,7 +23,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     if @article.save
       #Izbaci da je nešto kreirano(ovo se ispusuje u wrapperu application.html.erb)
-      flash[:notice] = "You have sucessfully created an artcile"
+      flash[:success] = "You have sucessfully created an artcile"
       redirect_to article_path(@article)
     else
       #ponovo renderaj new.html.erb
@@ -35,7 +35,7 @@ class ArticlesController < ApplicationController
   def update
     # moramo zapisati parametre
     if @article.update(article_params)
-      flash[:notice] = "Article was sucessfully edited"
+      flash[:success] = "Article was sucessfully edited"
       redirect_to article_path(@article)
     else
       render 'edit'
@@ -47,7 +47,7 @@ class ArticlesController < ApplicationController
 
   def destroy
     @article.destroy
-    flash[:notice] = "Article was successfully destroyed"
+    flash[:danger] = "Article was successfully destroyed"
     redirect_to articles_path
   end
 
