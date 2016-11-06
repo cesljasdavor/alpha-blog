@@ -19,7 +19,8 @@ $navbar-default-bg: #00061F;
 
 .jumbotron {
   background-image: asset-url('jumbotron.jpg');
-
+  height: 350px;
+  margin-bottom: 0;
 }
 
 .btn-jmbtrn {
@@ -53,4 +54,8 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+.navbar {
+  margin-top: 0px;
+  padding-top: 0px;
 }
