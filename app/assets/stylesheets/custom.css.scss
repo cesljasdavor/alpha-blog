@@ -30,6 +30,19 @@ $navbar-default-bg: #00061F;
   color: #D9DBE8;
   font-family: Georgia;
 }
+.about-title a {
+  text-decoration: none;
+  color: #D9DBE8;
+}
+
+#about {
+  border: none;
+  color: #00061F;
+  font-size: 16;
+  font-family: "Arial Black";
+  padding-top: 15 px;
+  padding-bottom: 20px;
+}
 
 footer {
   margin-top: 45px;
