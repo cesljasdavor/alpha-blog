@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8f1d15be-39a4-4477-b9d7-8b7330acb44f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="alpha-blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -918,12 +917,12 @@
       <workItem from="1478447318131" duration="12457000" />
       <workItem from="1478613513102" duration="253000" />
       <workItem from="1479309178848" duration="38000" />
-      <workItem from="1480774457766" duration="8915000" />
+      <workItem from="1480774457766" duration="9027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52120000" />
+    <option name="totallyTimeSpent" value="52232000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
