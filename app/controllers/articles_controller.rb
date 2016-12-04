@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
   #svi ovi parametri dakle @article ili @articles se šalju u pripadne .html.erb datoteke prilikom poziva ovih funkcija
   #jer ih upravo one i pozivaju
   def index
-    @articles = Article.all
+    @articles = Article.paginate(page: params[:page], per_page: 5)
 
     respond_to do |format|
       format.html
