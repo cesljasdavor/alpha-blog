@@ -23,7 +23,7 @@ class ArticlesController < ApplicationController
   # na ovo ode kad klikneš submit button
   def create
     @article = Article.new(article_params)
-    @article.user = User.first
+    @article.user = current_user
     if @article.save
       #Izbaci da je nešto kreirano(ovo se ispusuje u wrapperu application.html.erb)
       flash[:success] = "You have sucessfully created an artcile"
