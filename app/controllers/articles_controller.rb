@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
 
   before_action :set_article, only: [:edit, :show, :update, :destroy]
+  before_action :require_user, except: [:index, :show]
+  before_action :require_same_user, only: [:edit, :update, :destroy]
   #svi ovi parametri dakle @article ili @articles se šalju u pripadne .html.erb datoteke prilikom poziva ovih funkcija
   #jer ih upravo one i pozivaju
   def index
@@ -18,7 +20,7 @@ class ArticlesController < ApplicationController
 
   def edit
   end
-
+  # na ovo ode kad klikneš submit button
   def create
     @article = Article.new(article_params)
     @article.user = User.first
@@ -60,5 +62,12 @@ class ArticlesController < ApplicationController
 
   def article_params
     params.require(:article).permit(:title, :description)
+  end
+
+  def require_same_user
+    if @article.user != current_user
+      flash[:danger] = "You can only edit or delete your own articles"
+      redirect_to root_path
+    end
   end
 end
