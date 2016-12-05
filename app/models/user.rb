@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :articles
+  has_many :articles, dependent: :destroy #unistava sve article ako se user unisti
 
   validates :username, presence: true,
             uniqueness: { case_sensitive: false },
